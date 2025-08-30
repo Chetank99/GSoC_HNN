@@ -21,9 +21,9 @@
 
 ## Mentors
 
-- [Katharina Duecker]([katduecker (Katharina Duecker)](https://github.com/katduecker))
-- [Dylan Daniels]([Dylan Daniels](https://www.notion.so/jonescompneurolab/%5Bdylansdaniels%5D(%3Chttps://github.com/dylansdaniels%3E)))
-- [Austin E. Soplata]([asoplata (Austin E. Soplata)](https://github.com/asoplata))
+- Katharina Duecker ([katduecker](https://github.com/katduecker))
+- Dylan Daniels ([dylansdaniels](https://github.com/dylansdaniels))
+- Austin E. Soplata ([asoplata](https://github.com/asoplata))
 
 ## Project Overview
 
@@ -61,7 +61,7 @@ The chunks were implemented in dependency order (work done across multiple branc
 
 ### Chunk 1: Dynamic Cell Positioning (**Merged**)
 
-**Pull Request:** [#1095 - Introducing layer_dict for cell coordinates](https://github.com/jonescompneurolab/hnn-core/pull/1095)
+**PR:** [#1095 - Introducing layer_dict for cell coordinates](https://github.com/jonescompneurolab/hnn-core/pull/1095)
 
 **What was accomplished:**
 
@@ -94,7 +94,7 @@ This smaller but crucial chunk resolved naming inconsistencies that were prevent
 
 ### Chunk 2: Metadata-Driven Architecture (**under code review**)
 
-**Pull Request:** [#1099 - Chetan's Phase2/Chunk2 upgrades to celltype metadata](https://github.com/jonescompneurolab/hnn-core/pull/1099)
+**PR:** [#1099 - Chetan's Phase2/Chunk2 upgrades to celltype metadata](https://github.com/jonescompneurolab/hnn-core/pull/1099)
 
 **What was accomplished:**
 
@@ -132,7 +132,7 @@ Originally, HNN-Core only supported four hardcoded cell types:
 - L2_basket (Layer 2 inhibitory neurons)
 - L5_basket (Layer 5 inhibitory neurons)
 
-[CellTypeBuilder]([hnn-core/hnn_core/cells_default.py at fb5a70c9d7c42d9f4fcde63a2e61e4291fb1fa81 · jonescompneurolab/hnn-core](https://github.com/jonescompneurolab/hnn-core/blob/fb5a70c9d7c42d9f4fcde63a2e61e4291fb1fa81/hnn_core/cells_default.py#L6)) allows to
+[CellTypeBuilder](https://github.com/jonescompneurolab/hnn-core/blob/fb5a70c9d7c42d9f4fcde63a2e61e4291fb1fa81/hnn_core/cells_default.py#L6) allows to
 
 - Create new cell types without modifying core code
 - Define custom properties for each cell type
@@ -158,7 +158,7 @@ class CellTypeBuilder:
 3. **Set Electrical Properties**
 4. **Define Connectivity**
 
-and to be used via [custom_cell_factory]([hnn-core/hnn_core/cells_default.py at fb5a70c9d7c42d9f4fcde63a2e61e4291fb1fa81 · jonescompneurolab/hnn-core](https://github.com/jonescompneurolab/hnn-core/blob/fb5a70c9d7c42d9f4fcde63a2e61e4291fb1fa81/hnn_core/cells_default.py#92))
+and to be used via [custom_cell_factory](https://github.com/jonescompneurolab/hnn-core/blob/fb5a70c9d7c42d9f4fcde63a2e61e4291fb1fa81/hnn_core/cells_default.py#L92)
 
 This chunk represents the final step toward a fully flexible cell type system and is planned for post-GSoC development, building on the foundations established in the completed chunks.
 
