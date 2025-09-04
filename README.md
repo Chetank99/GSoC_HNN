@@ -92,7 +92,7 @@ This change was the first step toward flexible network creation, moving away fro
 
 This smaller but crucial chunk resolved naming inconsistencies that were preventing the larger architectural changes. It established the foundation for consistent cell type handling throughout the refactoring process.
 
-### Chunk 2: Metadata-Driven Architecture (**under code review**)
+### Chunk 2: Metadata-Driven Architecture (**Merged**)
 
 **PR:** [#1099 - Chetan's Phase2/Chunk2 upgrades to celltype metadata](https://github.com/jonescompneurolab/hnn-core/pull/1099)
 
@@ -121,7 +121,7 @@ This smaller but crucial chunk resolved naming inconsistencies that were prevent
 
 **Impact:** This enables HNN-core to support arbitrary cell types through metadata configuration rather than requiring code changes for each new cell type.
 
-### Chunk 3: Unified Cell Factory
+### Chunk 3: Unified Cell Factory (Future Work)
 
 The `CellTypeBuilder` is like a cell factory that lets you design and build neurons with specific properties
 
@@ -187,7 +187,7 @@ This chunk represents the final step toward a fully flexible cell type system an
 | --- | --- | --- | --- |
 | **Chunk 1** | ✅ Merged | [#1095](https://github.com/jonescompneurolab/hnn-core/pull/1095) | Introducing layer_dict for cell coordinates |
 | **Chunk 1.5** | ✅ Merged | [#1103](https://github.com/jonescompneurolab/hnn-core/pull/1103) | Short-to-long name mapping standardization |
-| **Chunk 2** | 🔄 Under Review | [#1099](https://github.com/jonescompneurolab/hnn-core/pull/1099) | Metadata-driven connections and drives |
+| **Chunk 2** | ✅ Merged | [#1099](https://github.com/jonescompneurolab/hnn-core/pull/1099) | Metadata-driven connections and drives |
 | **Chunk 3** | 🚀 Post-GSoC | [*Proof of concept*](https://github.com/jonescompneurolab/hnn-core/blob/fb5a70c9d7c42d9f4fcde63a2e61e4291fb1fa81/hnn_core/cells_default.py#L6https://github.com/jonescompneurolab/hnn-core/blob/fb5a70c9d7c42d9f4fcde63a2e61e4291fb1fa81/hnn_core/cells_default.py#L6) | Unified cell factory pattern |
 
 ---
